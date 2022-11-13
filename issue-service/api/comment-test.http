@@ -1,0 +1,33 @@
+### 이슈 등록
+POST {{host}}/api/issues
+Content-Type: application/json
+
+{
+  "summary" : "테스트",
+  "description" : "설명",
+  "type" : "TASK",
+  "priority" : "LOW",
+  "status" : "TODO"
+}
+
+### 코멘트 등록
+POST {{host}}/api/issues/{{issueId}}/comments
+Content-Type: application/json
+
+{
+  "body": "댓글테스트"
+}
+
+### 코멘트 수정
+PUT {{host}}/api/issues/{{issueId}}/comments/{{commentId}}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "issueId": 1,
+  "userId": 1,
+  "body": "WOW"
+}
+
+### 코멘트 삭제
+DELETE {{host}}/api/issues/{{issueId}}/comments/{{commentId}}
