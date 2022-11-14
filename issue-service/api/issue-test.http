@@ -1,6 +1,7 @@
 ### 이슈 등록
 POST {{host}}/api/issues
 Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImV4cCI6MTY2ODQzMjM4NywiaWF0IjoxNjY4NDI4Nzg3LCJ1c2VySWQiOjEsImVtYWlsIjoiZGV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoi7ZmN6ri464-ZIn0.bd4EAtZsceCI_ItGyQSA_QkhWQ3Zg7f5jftbU23KNDk
 
 {
   "summary" : "테스트",

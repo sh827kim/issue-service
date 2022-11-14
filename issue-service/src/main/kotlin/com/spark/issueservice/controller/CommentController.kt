@@ -19,7 +19,7 @@ class CommentController (
         @RequestBody commentRequest: CommentRequest
     ) : CommentResponse {
         return with(authUser) {
-            commentService.createComment(issueId, userId, username, commentRequest)
+            commentService.createComment(issueId, id, username, commentRequest)
         }
     }
 
@@ -28,7 +28,7 @@ class CommentController (
         authUser: AuthUser,
         @PathVariable commentId : Long,
         @RequestBody commentRequest: CommentRequest,
-    ) = commentService.updateComment(authUser.userId, commentId, commentRequest)
+    ) = commentService.updateComment(authUser.id, commentId, commentRequest)
 
 
     @DeleteMapping("/{commentId}")
@@ -38,6 +38,6 @@ class CommentController (
         @PathVariable issueId: Long,
         @PathVariable commentId: Long,
     ) {
-        commentService.deleteComment(issueId, commentId, authUser.userId)
+        commentService.deleteComment(issueId, commentId, authUser.id)
     }
 }

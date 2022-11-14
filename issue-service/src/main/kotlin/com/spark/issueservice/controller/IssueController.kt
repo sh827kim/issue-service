@@ -26,7 +26,7 @@ class IssueController(
     fun create(
         authUser: AuthUser,
         @RequestBody request: IssueRequest,
-    ) = issueService.create(authUser.userId, request)
+    ) = issueService.create(authUser.id, request)
 
     @GetMapping
     fun getAll(

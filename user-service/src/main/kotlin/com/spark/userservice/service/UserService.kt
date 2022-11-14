@@ -58,7 +58,7 @@ class UserService (
             }
 
             val jwtClaim = JwtClaim(
-                userId = id!!,
+                id = id!!,
                 email = email,
                 profileUrl = profileUrl,
                 username = username

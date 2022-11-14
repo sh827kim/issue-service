@@ -13,7 +13,7 @@ object JwtUtils {
             .withSubject(properties.subject)
             .withIssuedAt(Date())
             .withExpiresAt(Date(Date().time + properties.expiresTime  * 1000))
-            .withClaim("userId", claim.userId)
+            .withClaim("id", claim.id)
             .withClaim("email", claim.email)
             .withClaim("profileUrl", claim.profileUrl)
             .withClaim("username", claim.username)
@@ -30,7 +30,7 @@ object JwtUtils {
 }
 
 data class JwtClaim (
-    val userId : Long,
+    val id : Long,
     val email : String,
     val profileUrl : String? = null,
     val username: String,

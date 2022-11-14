@@ -1,0 +1,556 @@
+GET http://localhost:9090/api/users/me
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImlkIjoyLCJleHAiOjE2Njg0MzQyMDgsImlhdCI6MTY2ODQzMDYwOCwiZW1haWwiOiJkZXZAZ21haWwuY29tIiwidXNlcm5hbWUiOiLtmY3quLjrj5kifQ.oH6XoRQz3jbX09Wa9c-KWO6Zvk-wZEXLgPqFwj6j8fc
+
+<> 2022-11-14T215656.200.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T215648.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:8080/api/issues
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImV4cCI6MTY2ODQzMjM4NywiaWF0IjoxNjY4NDI4Nzg3LCJ1c2VySWQiOjEsImVtYWlsIjoiZGV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoi7ZmN6ri464-ZIn0.bd4EAtZsceCI_ItGyQSA_QkhWQ3Zg7f5jftbU23KNDk
+
+{
+  "summary" : "테스트",
+  "description" : "설명",
+  "type" : "TASK",
+  "priority" : "LOW",
+  "status" : "TODO"
+}
+
+<> 2022-11-14T212638.200.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T212627.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:8080/api/issues
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImV4cCI6MTY2ODQzMjI3NCwiaWF0IjoxNjY4NDI4Njc0LCJ1c2VySWQiOjEsImVtYWlsIjoiZGV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoi7ZmN6ri464-ZIn0.2frx8V6PTvQK9ftYdkMkLX3GzqZDsVR_y9BnA3Uin2k
+
+{
+  "summary" : "테스트",
+  "description" : "설명",
+  "type" : "TASK",
+  "priority" : "LOW",
+  "status" : "TODO"
+}
+
+<> 2022-11-14T212458.200.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T212434.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T211335.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T210911.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T210725.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T174636.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T173657.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+GET http://localhost:9090/api/users/1/username
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImV4cCI6MTY2ODQxNzcyNiwiaWF0IjoxNjY4NDE0MTI2LCJ1c2VySWQiOjEsImVtYWlsIjoiZGV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoi7ZmN6ri464-ZIn0.1OTBKb_0Mkld0O4E7UfgrOa0HLuHJAN_dTw_lokbpDo
+
+<> 2022-11-14T172227.200.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T172206.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+GET http://localhost:9090/api/users/me
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImV4cCI6MTY2ODQxNzQyOCwiaWF0IjoxNjY4NDEzODI4LCJ1c2VySWQiOjEsImVtYWlsIjoiZGV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoi7ZmN6ri464-ZIn0.TD5J0551HEjvkjO9w8GF-_439ZZ-wTKtPGClY_RBD-Y
+
+<> 2022-11-14T171737.200.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T171708.200.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+DELETE http://localhost:9090/api/users/logout
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhdXRoIiwiaXNzIjoiamFyYSIsImV4cCI6MTY2ODQxNTg5MCwiaWF0IjoxNjY4NDEyMjkwLCJ1c2VySWQiOjEsImVtYWlsIjoiZGV2QGdtYWlsLmNvbSIsInVzZXJuYW1lIjoi7ZmN6ri464-ZIn0.QjyELdWfePyq9eY4FinQhftj5NqnnS31dT_9gSer-10
+
+###
+
+POST http://localhost:9090/api/users/login
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+<> 2022-11-14T165130.200.json
+
+###
+
+POST http://localhost:9090/api/users/login
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+}
+
+<> 2022-11-14T164954.400.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+}
+
+<> 2022-11-14T164914.400.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+}
+
+<> 2022-11-14T164553.400.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+}
+
+<> 2022-11-14T162705.400.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+}
+
+<> 2022-11-14T162531.400.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+}
+
+<> 2022-11-14T162445.400.json
+
+###
+
+POST http://localhost:9090/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "",
+}
+
+<> 2022-11-14T162416.400.json
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "",
+  "username": "홍길동"
+}
+
+###
+
+POST http://localhost:9090/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "",
+  "username": "홍길동"
+}
+
+###
+
+DELETE http://localhost:8080/api/issues/1/comments/1
+
+###
+
+POST http://localhost:8080/api/issues/1/comments
+Content-Type: application/json
+
+{
+  "body": "댓글테스트"
+}
+
+<> 2022-11-13T200018.200.json
+
+###
+
+POST http://localhost:8080/api/issues
+Content-Type: application/json
+
+{
+  "summary" : "테스트",
+  "description" : "설명",
+  "type" : "TASK",
+  "priority" : "LOW",
+  "status" : "TODO"
+}
+
+<> 2022-11-13T200016.200.json
+
+###
+
+GET http://localhost:8080/api/issues?status=TODO
+Accept: application/json
+
+<> 2022-11-13T195541.200.json
+
+###
+
+PUT http://localhost:8080/api/issues/1/comments/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "issueId": 1,
+  "userId": 1,
+  "body": "WOW"
+}
+
+<> 2022-11-13T195531.200.json
+
+###
+
+POST http://localhost:8080/api/issues/1/comments
+Content-Type: application/json
+
+{
+  "body": "댓글테스트"
+}
+
+<> 2022-11-13T195528.200.json
+
+###
+
+POST http://localhost:8080/api/issues
+Content-Type: application/json
+
+{
+  "summary" : "테스트",
+  "description" : "설명",
+  "type" : "TASK",
+  "priority" : "LOW",
+  "status" : "TODO"
+}
+
+<> 2022-11-13T195527.200.json
+
+###
+
+GET http://localhost:8080/api/issues?status=TODO
+Accept: application/json
+
+<> 2022-11-13T194730.200.json
+
+###
+
+POST http://localhost:8080/api/issues/1/comments
+Content-Type: application/json
+
+{
+  "body": "댓글테스트"
+}
+
+<> 2022-11-13T194719.200.json
+
+###
+
