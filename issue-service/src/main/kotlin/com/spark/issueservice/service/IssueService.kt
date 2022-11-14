@@ -1,5 +1,6 @@
 package com.spark.issueservice.service
 
+import com.spark.issueservice.domain.CommentRepository
 import com.spark.issueservice.domain.Issue
 import com.spark.issueservice.domain.IssueRepository
 import com.spark.issueservice.domain.enums.IssueStatus
@@ -13,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional
 @Service
 class IssueService (
     private val issueRepository: IssueRepository,
+    private val commentRepository: CommentRepository,
 ) {
 
     @Transactional
