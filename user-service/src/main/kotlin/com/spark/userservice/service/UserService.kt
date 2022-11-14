@@ -1,5 +1,6 @@
 package com.spark.userservice.service
 
+import com.auth0.jwt.interfaces.DecodedJWT
 import com.spark.userservice.config.CoroutineCacheManager
 import com.spark.userservice.config.JwtProperties
 import com.spark.userservice.domain.entity.User
@@ -7,6 +8,7 @@ import com.spark.userservice.domain.repository.UserRepository
 import com.spark.userservice.dto.SignInRequest
 import com.spark.userservice.dto.SignInResponse
 import com.spark.userservice.dto.SignUpRequest
+import com.spark.userservice.exception.InvalidJwtTokenException
 import com.spark.userservice.exception.PasswordNotVerifiedException
 import com.spark.userservice.exception.UserExistsException
 import com.spark.userservice.exception.UserNotFoundException
@@ -75,5 +77,30 @@ class UserService (
 
     suspend fun logout(token: String) {
         cacheManager.awaitEvict(token)
+    }
+
+    suspend fun getMyInfo(token: String) :User {
+        return cacheManager.awaitGetOrPut(key = token, ttl= CACHE_TTL) {
+            val decodedJwt : DecodedJWT = JwtUtils.decode(token, jwtProperties.secret, jwtProperties.issuer)
+
+            val userId = decodedJwt.claims["userId"]?.asLong() ?: throw InvalidJwtTokenException()
+
+            getUser(userId)
+        }
+    }
+
+    suspend fun getUser(userId: Long) : User {
+        return userRepository.findById(userId) ?: throw UserNotFoundException()
+    }
+
+    suspend fun edit(token: String, username: String, filename: String?) : User {
+        val user = getMyInfo(token)
+
+        val newUser = user.copy(username = username, profileUrl = filename ?: user.profileUrl)
+
+        return userRepository.save(newUser).also {
+            cacheManager.awaitPut(token, it, CACHE_TTL)
+        }
+
     }
 }
