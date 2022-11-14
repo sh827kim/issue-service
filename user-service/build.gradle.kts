@@ -6,6 +6,6 @@ dependencies {
 
     kapt("org.springframework.boot:spring-boot-configuration-processor")
 
-    implementation("at.fayre.lib:bcrypt:0.9.0")
+    implementation("at.favre.lib:bcrypt:0.9.0")
     runtimeOnly("io.r2dbc:r2dbc-h2")
 }

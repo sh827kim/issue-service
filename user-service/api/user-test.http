@@ -1,0 +1,33 @@
+
+### 회원 가입
+POST {{host}}/api/users/signup
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass",
+  "username": "홍길동"
+}
+
+### 로그인
+POST {{host}}/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "dev@gmail.com",
+  "password": "mypass"
+}
+
+### 로그아웃
+DELETE {{host}}/api/users/logout
+Authorization: Bearer {{token}}
+
+### 내정보 조회
+GET {{host}}/api/users/{{userId}}
+
+### 리포터 조회
+GET {{host}}/api/users/{{reporterId}}/username
+
+### 내정보 수정
+POST {{host}}/api/users/{{userId}}
+Content-Type: multipart/form-data
